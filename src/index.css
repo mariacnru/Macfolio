@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html,
+body {
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  background-image: url(/images/wallpaper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@theme {
+  --breakpoint-3xl: 1920px;
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility col-center {
+  @apply flex flex-col justify-center items-center;
+}
+
+@utility abs-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+@layer base {
+  main {
+    @apply w-dvw h-dvh overflow-hidden;
+  }
+
+  nav {
+    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+
+    div {
+      @apply flex items-center gap-5;
+    }
+
+    ul {
+      @apply flex items-center gap-5 text-xs font-medium;
+    }
+
+    time{@apply text-sm font-semibold}
+  }
+}
