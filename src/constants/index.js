@@ -5,11 +5,19 @@ const navLinks = [
 ];
 
 const navIcons = [
-  { id: 1, img: "/public/icons/wifi.svg" },
-  { id: 2, img: "/public/icons/search.svg" },
-  { id: 3, img: "/public/icons/user.svg" },
-  { id: 4, img: "/public/icons/mode.svg" },
-  { id: 5, img: "/public/icons/user.svg" },
+  { id: 1, img: "/icons/wifi.svg" },
+  { id: 2, img: "/icons/search.svg" },
+  { id: 3, img: "/icons/user.svg" },
+  { id: 4, img: "/icons/mode.svg" },
+  { id: 5, img: "/icons/user.svg" },
 ];
 
-export { navLinks, navIcons };
+const footerIcons = [
+  { id: 1, img: "/images/finder.png" },
+  { id: 2, img: "/images/safari.png" },
+  { id: 3, img: "/images/photos.png" },
+  { id: 4, img: "/images/contact.png" },
+  { id: 5, img: "/images/terminal.png" },
+];
+
+export { navLinks, navIcons, footerIcons };

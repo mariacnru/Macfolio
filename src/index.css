@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "morraba";
+  src: url(/public/fonts/Morabba/woff2/Morabba-Medium.woff2);
+}
+
 html,
 body {
   width: 100dvw;
@@ -13,6 +18,7 @@ body {
 
 @theme {
   --breakpoint-3xl: 1920px;
+  --font-morraba: "morraba";
 }
 
 @utility flex-center {
@@ -29,11 +35,13 @@ body {
 
 @layer base {
   main {
-    @apply w-dvw h-dvh overflow-hidden;
+    @apply w-dvw h-dvh overflow-hidden relative;
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+    @apply flex justify-between
+      items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
 
     div {
       @apply flex items-center gap-5;
@@ -41,8 +49,14 @@ body {
 
     ul {
       @apply flex items-center gap-5 text-xs font-medium;
+
+      li {
+        @apply hover:underline cursor-pointer transition-transform;
+      }
     }
 
-    time{@apply text-sm font-semibold}
+    time {
+      @apply text-sm font-semibold;
+    }
   }
 }
