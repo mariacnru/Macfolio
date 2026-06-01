@@ -8,7 +8,7 @@ import { SlCalender } from "react-icons/sl";
 function ContactMe({ contactMe, setContactMe }) {
   return (
     <div
-      className={`${contactMe ? "inline" : "hidden"} text-stone-100 w-2xl absolute top-1/6 right-0 left-0 mx-auto bg-white rounded-xl overflow-hidden`}
+      className={`${contactMe ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-0"} transition-all text-stone-100 w-2xl absolute top-1/6 right-0 left-0 mx-auto bg-white rounded-xl overflow-hidden`}
     >
       <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]">
         <div className="flex items-center gap-2">
