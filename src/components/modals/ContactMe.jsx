@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
 import { SiMinutemailer } from "react-icons/si";
 import { SlCalender } from "react-icons/sl";
 
-function ContactMe({ contactMe, setContactMe }) {
+function ContactMe({ contactMe, setContactMe, topZ }) {
+  const modalRef = useRef();
+
+  const bringToFront = () => {
+    topZ.current += 1;
+    console.log(modalRef.current);
+
+    modalRef.current.style.zIndex = topZ.current;
+  };
+
   return (
     <div
-      className={`${contactMe ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-0"} transition-all text-stone-100 w-2xl absolute top-1/6 right-0 left-0 mx-auto bg-white rounded-xl overflow-hidden`}
+      ref={modalRef}
+      onClick={bringToFront}
+      className={`${
+        contactMe
+          ? "visible opacity-100 scale-100"
+          : "invisible opacity-0 scale-0"
+      } transition-all text-gray-300 w-2xl absolute top-1/7 right-0 left-0 mx-auto bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
     >
       <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]">
         <div className="flex items-center gap-2">
@@ -31,21 +46,46 @@ function ContactMe({ contactMe, setContactMe }) {
         <h3 className="font-semibold text-2xl">Let's Contact</h3>
         <p>Got an idea? A bug to squash? Or just wanna talk tech? I’m in.</p>
         <div className="flex justify-between items-center gap-2">
-          <div className="bg-red-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between">
+          <div className="bg-red-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
             <SlCalender size={25} />
-            <span className="font-semibold">Schedual a call</span>
+
+            <a
+              href="tel:+989336049409"
+              target="_self"
+              rel="noopener noreferrer"
+            >
+              call me
+            </a>
           </div>
-          <div className="bg-green-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between">
+
+          <div className="bg-green-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
             <SiMinutemailer size={25} />
-            <span className="font-semibold">Email me</span>
+
+            <a href="mailto:mariacnru@gmail.com">Email me</a>
           </div>
-          <div className="bg-[#fe886c] p-3 w-full h-22 rounded-lg flex flex-col justify-between">
+
+          <div className="bg-[#fe886c] p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
             <BsTwitterX size={25} />
-            <span className="font-semibold">Twitter/X</span>
+
+            <a
+              href="https://x.com/yourusername"
+              target="_self"
+              rel="noopener noreferrer"
+            >
+              Twitter/X
+            </a>
           </div>
-          <div className="bg-sky-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between">
+
+          <div className="bg-sky-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
             <FaLinkedin size={25} />
-            <span className="font-semibold">Linkedin</span>
+
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_self"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>
           </div>
         </div>
       </div>
