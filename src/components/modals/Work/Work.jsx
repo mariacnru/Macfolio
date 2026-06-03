@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import AboutMe from "./components/AboutMe";
-import Works from "./components/Works";
+import Works from "./components/Works/Works";
 import Resume from "./components/Resume";
 
 function Work({ works, setWorks, topZ }) {
