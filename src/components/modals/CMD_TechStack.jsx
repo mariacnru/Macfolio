@@ -1,9 +1,17 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
 
 function CMD_TechStack({ techStack, setTechStack, topZ }) {
   const modalRef = useRef();
+   const [zIndex, setZIndex] = useState(10);
+
+   useEffect(() => {
+     if (techStack) {
+       topZ.current += 1;
+       setZIndex(topZ.current);
+     }
+   }, [techStack]);
 
   const bringToFront = () => {
     topZ.current += 1;
@@ -15,6 +23,7 @@ function CMD_TechStack({ techStack, setTechStack, topZ }) {
     <div
       ref={modalRef}
       onClick={bringToFront}
+      style={{ zIndex }}
       className={`${
         techStack
           ? "visible opacity-100 scale-100"

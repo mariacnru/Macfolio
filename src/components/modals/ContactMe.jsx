@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
@@ -7,6 +7,14 @@ import { SlCalender } from "react-icons/sl";
 
 function ContactMe({ contactMe, setContactMe, topZ }) {
   const modalRef = useRef();
+  const [zIndex, setZIndex] = useState(10);
+
+  useEffect(() => {
+    if (contactMe) {
+      topZ.current += 1;
+      setZIndex(topZ.current);
+    }
+  }, [contactMe]);
 
   const bringToFront = () => {
     topZ.current += 1;
@@ -19,6 +27,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
     <div
       ref={modalRef}
       onClick={bringToFront}
+      style={{ zIndex }}
       className={`${
         contactMe
           ? "visible opacity-100 scale-100"
