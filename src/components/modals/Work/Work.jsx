@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import AboutMe from "./components/AboutMe";
+import Works from "./components/Works";
+import Resume from "./components/Resume";
 
 function Work({ works, setWorks, topZ }) {
   const modalRef = useRef();
   const [zIndex, setZIndex] = useState(10);
+  const [activeTab, setActiveTab] = useState("about");
 
   useEffect(() => {
     if (works) {
@@ -40,13 +43,13 @@ function Work({ works, setWorks, topZ }) {
           <li className="text-xs text-stone-500 font-semibold hover:bg-transparent">
             Favorites
           </li>
-          <li>
-            <img src="/public/icons/work.svg" alt="" /> Work
-          </li>
-          <li>
+          <li onClick={() => setActiveTab("about")}>
             <img src="/public/icons/info.svg" alt="" /> About me
           </li>
-          <li>
+          <li onClick={() => setActiveTab("work")}>
+            <img src="/public/icons/work.svg" alt="" /> Work
+          </li>
+          <li onClick={() => setActiveTab("resume")}>
             <img src="/public/icons/file.svg" alt="" /> Resume
           </li>
         </ul>
@@ -65,7 +68,7 @@ function Work({ works, setWorks, topZ }) {
         </ul>
       </aside>
 
-      <div className="w-full bg-[#1e1e1e]">
+      <div className="w-full h-112.5 bg-[#1e1e1e]">
         <header className="grid grid-cols-2 p-2 border-b border-stone-700">
           <div className="">
             <p className="text-sm font-semibold">Work</p>
@@ -78,7 +81,9 @@ function Work({ works, setWorks, topZ }) {
           </div>
         </header>
 
-        <AboutMe />
+        {activeTab === "work" && <Works />}
+        {activeTab === "about" && <AboutMe />}
+        {activeTab === "resume" && <Resume />}
       </div>
     </div>
   );
