@@ -11,10 +11,10 @@ function Welcome() {
       id="welcome"
       className="h-screen flex flex-col justify-center items-center text-white"
     >
-      <p ref={subtitleRef} className="">
+      <p ref={subtitleRef} className="text-sm sm:text-base">
         Hey, I'm Maryam! Welcom to my
       </p>
-      <h1 ref={titleRef} className="mt-7 text-9xl italic">
+      <h1 ref={titleRef} className="mt-7 text-7xl sm:text-9xl italic">
         <span>p</span>
         <span>o</span>
         <span>r</span>

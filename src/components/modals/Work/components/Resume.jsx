@@ -4,13 +4,13 @@ function Resume() {
   return (
     <div className="p-5 h-100 overflow-y-auto font-dana project" dir="rtl">
       <div className="p-2 text-center">
-        <h2 className="font-morraba text-2xl text-purple-500">
+        <h2 className="font-morraba text-2xl text-blue-500">
           مریم احمدآبادی
         </h2>
         <h2>Frontend Developer</h2>
       </div>
 
-      <div className="text-sm flex justify-between items-center border-y border-purple-500 py-2">
+      <div className="text-sm flex justify-between items-center border-y border-blue-500 py-2">
         <span>استان تهران | شهریار</span>
         <span>
           <a href="tel:09336049409">09336049409</a>
@@ -29,7 +29,7 @@ function Resume() {
       </div>
 
       <div className="text-right">
-        <h3 className="font-semibold font-morraba text-purple-500 border-b border-purple-500 pb-2">
+        <h3 className="font-semibold font-morraba text-blue-500 border-b border-blue-500 pb-2">
           سوابق کاری
         </h3>
         <div className="flex justify-between items-center py-2">
@@ -50,7 +50,7 @@ function Resume() {
       </div>
 
       <div className="mt-5">
-        <h3 className="font-semibold font-morraba text-purple-500 border-b border-purple-500 pb-2">
+        <h3 className="font-semibold font-morraba text-blue-500 border-b border-blue-500 pb-2">
           مهارت ها
         </h3>
         <div className="grid grid-cols-2 gap-x-5 gap-y-2 *:w-full py-2">
@@ -75,7 +75,7 @@ function Resume() {
       </div>
 
       <div className="mt-5">
-        <h3 className="font-semibold font-morraba text-purple-500 border-b border-purple-500 pb-2">
+        <h3 className="font-semibold font-morraba text-blue-500 border-b border-blue-500 pb-2">
           تحصیلات
         </h3>
         <div className="*:block py-2">
@@ -85,7 +85,7 @@ function Resume() {
         </div>
       </div>
       <div className="mt-5">
-        <h3 className="font-semibold font-morraba text-purple-500 border-b border-purple-500 pb-2">
+        <h3 className="font-semibold font-morraba text-blue-500 border-b border-blue-500 pb-2">
           زبان های خارجی
         </h3>
         <span className="block py-2">انگلیسی | پیشرفته</span>

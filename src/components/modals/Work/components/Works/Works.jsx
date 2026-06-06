@@ -114,6 +114,18 @@ function Works() {
               تکنولوژی ها: JavaScript, React.js, TailwindCss, React-Router, SPA
             </p>
 
+            <p className="text-sm">
+              لینک گیتهاب پروژه:{" "}
+              <a
+                href="https://github.com/mariacnru/news-magazine-landing.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline"
+              >
+                مشاهده پروژه در گیتهاب
+              </a>
+            </p>
+
             <div className="">
               <div className="grid grid-cols-2 gap-2">
                 <div className="w-full h-fit rounded-lg overflow-hidden">
@@ -189,34 +201,51 @@ function Works() {
               <FaArrowLeftLong />
             </div>
 
-            <h3 className="font-semibold text-white">
-              Project Name: Personal Website
-            </h3>
+            <h3 className="font-semibold text-white">نام پروژه: وبسایت شخصی</h3>
             <p className="text-sm">
-              A minimalist personal portfolio website showcasing projects,
-              skills, and contact information.
+              یک وبسایت نمونه‌کار شخصی مدرن و تک‌صفحه‌ای <bdi>(SPA)</bdi>
+              ساخته‌شده با <bdi>React.js</bdi>، دارای طراحی واکنش‌گرا{" "}
+              <bdi>(Responsive)</bdi>، رابط کاربری روان، و پشتیبانی از حالت روشن
+              و تاریک برای نمایش پروژه‌ها، مهارت‌ها و اطلاعات تماس و مقالات.
             </p>
             <p className="text-sm">
-              Technologies: JavaScript, React.js, TailwindCss, React-Router, SPA
+              تکنولوژی ها: JavaScript, React.js, TailwindCss, React-Router, SPA,
+              Dark Mode
             </p>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
+
+            <p className="text-sm">
+              لینک گیتهاب پروژه:{" "}
+              <a
+                href="https://github.com/mariacnru/frontEnd-developer-portfolio.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline"
+              >
+                مشاهده پروژه در گیتهاب
+              </a>
+            </p>
+            <div className="flex flex-col gap-5">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="w-full h-fit rounded-lg overflow-hidden">
+                  <p className="text-sm text-center p-2">لایت مود</p>
+                  <img src="/public/images/personal_website/1.webp" alt="" />
+                </div>
+                <div className="w-full h-fit rounded-lg overflow-hidden">
+                  <p className="text-sm text-center p-2">دارک مود</p>
+                  <img src="/public/images/personal_website/2.webp" alt="" />
+                </div>
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+              <div className="w-full h-fit rounded-lg overflow-hidden">
+                <img src="/public/images/personal_website/3.webp" alt="" />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/3.jpg" alt="" />
+              <div className="w-full h-fit rounded-lg overflow-hidden">
+                <img src="/public/images/personal_website/4.webp" alt="" />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/4.jpg" alt="" />
+              <div className="w-full h-fit rounded-lg overflow-hidden">
+                <img src="/public/images/personal_website/5.webp" alt="" />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+              <div className="w-full h-fit rounded-lg overflow-hidden">
+                <img src="/public/images/personal_website/6.webp" alt="" />
               </div>
             </div>
           </div>

@@ -2,26 +2,31 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="px-5 py-4 space-y-5">
+    <div className="px-5 py-4 space-y-5" dir="rtl">
       <div className="w-18 h-18 rounded-full bg-purple-500"></div>
-      <h2 className="font-semibold">Meet the Developer Behind the Code</h2>
+
+      <h2 className="font-semibold">با توسعه‌دهنده پشت این کدها آشنا شوید</h2>
+
       <p className="*:block space-y-5 text-sm">
         <span>
-          Hey! I’m Maryam 👋, a Frontend web developer who enjoys building
-          sleek, interactive websites that actually work well.
+          سلام! من مریم 👋 هستم، توسعه‌دهنده فرانت‌اند که عاشق ساخت وبسایت‌های
+          مدرن، تعاملی و کاربردی است.
         </span>
+
         <span>
-          I specialize in JavaScript and React I love making things feel smooth,
-          fast, and just a little bit delightful.
+          تخصص من در JavaScript و React.js است و از ساخت رابط‌های کاربری روان،
+          سریع و جذاب لذت می‌برم.
         </span>
+
         <span>
-          I’m big on clean UI, good UX, and writing code that doesn’t need a
-          search party to debug.
+          به طراحی تمیز UI، تجربه کاربری خوب (UX) و نوشتن کدهای مرتب و قابل
+          نگهداری اهمیت زیادی می‌دهم.
         </span>
+
         <span>
-          Outside of dev work, you'll find me tweaking layouts at 2AM, sipping
-          overpriced coffee, or impulse-buying gadgets I absolutely convinced
-          myself I needed 😅
+          خارج از دنیای برنامه‌نویسی، احتمالاً من را در حال تغییر دادن طراحی
+          صفحات تا ساعت ۲ شب، نوشیدن قهوه، یا خرید گجت‌هایی می‌بینید که خودم را
+          قانع کرده‌ام به آن‌ها نیاز دارم 😅
         </span>
       </p>
     </div>

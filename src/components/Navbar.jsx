@@ -16,7 +16,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="">
+      <div className="hidden md:flex">
         <ul>
           {navIcons.map(({ id, img }) => (
             <li key={id}>

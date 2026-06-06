@@ -32,9 +32,10 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
         contactMe
           ? "visible opacity-100 scale-100"
           : "invisible opacity-0 scale-0"
-      } transition-all text-gray-300 w-2xl absolute top-1/7 right-0 left-0 mx-auto bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      } transition-all text-gray-300 absolute top-1/7 right-0 left-0 mx-5 md:mx-20 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      dir="rtl"
     >
-      <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]">
+      <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]" dir="ltr">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 rounded-full bg-[#ff5f57]"></div>
           <div className="w-4 h-4 rounded-full bg-[#febc2e]"></div>
@@ -50,11 +51,18 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
           <RiCloseLine />
         </div>
       </header>
-      <div className="bg-[#1e1e1e] p-5 space-y-5">
+
+      <div className="bg-[#1e1e1e] p-5 space-y-5 h-80 overflow-y-auto project">
         <div className="w-20 h-20 bg-purple-400 rounded-full"></div>
-        <h3 className="font-semibold text-2xl">Let's Contact</h3>
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I’m in.</p>
-        <div className="flex justify-between items-center gap-2">
+
+        <h3 className="font-semibold text-2xl">در ارتباط باشیم</h3>
+
+        <p>
+          ایده‌ای داری؟ پروژه‌ای برای همکاری؟ یا فقط می‌خوای درباره تکنولوژی
+          صحبت کنیم؟ خوشحال می‌شم در تماس باشیم.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
           <div className="bg-red-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
             <SlCalender size={25} />
 
@@ -63,14 +71,14 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
               target="_self"
               rel="noopener noreferrer"
             >
-              call me
+              تماس تلفنی
             </a>
           </div>
 
           <div className="bg-green-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
             <SiMinutemailer size={25} />
 
-            <a href="mailto:mariacnru@gmail.com">Email me</a>
+            <a href="mailto:mariacnru@gmail.com">ارسال ایمیل</a>
           </div>
 
           <div className="bg-[#fe886c] p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
@@ -81,7 +89,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
               target="_self"
               rel="noopener noreferrer"
             >
-              Twitter/X
+              توییتر / ایکس
             </a>
           </div>
 
@@ -93,7 +101,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
               target="_self"
               rel="noopener noreferrer"
             >
-              Linkedin
+              لینکدین
             </a>
           </div>
         </div>
