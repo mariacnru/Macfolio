@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home() {
+function Home({ setActiveTab }) {
   return (
     <ul className="*:flex *:flex-col *:items-center *:text-sm text-white relative">
       <li

@@ -18,7 +18,6 @@ function Work({ works, setWorks, topZ }) {
 
   const bringToFront = () => {
     topZ.current += 1;
-    console.log(modalRef.current);
 
     modalRef.current.style.zIndex = topZ.current;
   };
@@ -68,7 +67,7 @@ function Work({ works, setWorks, topZ }) {
         </ul>
       </aside>
 
-      <div className="w-full h-112.5 bg-[#1e1e1e]">
+      <div className="w-full h-112.5 bg-[#1e1e1e] ">
         <header className="grid grid-cols-2 p-2 border-b border-stone-700">
           <div className="">
             <p className="text-sm font-semibold">Work</p>

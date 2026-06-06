@@ -4,6 +4,10 @@
   font-family: "morraba";
   src: url(/public/fonts/Morabba/woff2/Morabba-Medium.woff2);
 }
+@font-face {
+  font-family: "dana";
+  src: url(/public/fonts/Dana/woff2/DanaFaNum-Regular.woff2);
+}
 
 html,
 body {
@@ -20,6 +24,7 @@ body {
 @theme {
   --breakpoint-3xl: 1920px;
   --font-morraba: "morraba";
+  --font-dana: "dana";
 }
 
 @utility flex-center {
@@ -60,4 +65,13 @@ body {
       @apply text-sm font-semibold;
     }
   }
+}
+
+.project::-webkit-scrollbar {
+  width: 5px;
+  background-color: #1e1e1e;
+}
+
+.project::-webkit-scrollbar-thumb {
+  background-color: black;
 }
