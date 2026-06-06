@@ -6,7 +6,7 @@ function Works() {
   const [activeTab, setActiveTab] = useState("home");
 
   return (
-    <div>
+    <div dir="rtl">
       {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
 
       <div className="">
@@ -102,33 +102,79 @@ function Works() {
             </div>
 
             <h3 className="font-semibold text-white">
-              Project Name: News Magazine Landing Page
+              نام پروژه: لندینگ پیج مجله خبری
             </h3>
+
             <p className="text-sm">
-              A responsive landing page for an online news and magazine platform
-              with featured articles and modern UI sections.
+              یک لندینگ پیج ریسپانسیو برای پلتفرم آنلاین اخبار و مجله، همراه با
+              مقالات ویژه و بخش‌های مدرن رابط کاربری.
             </p>
+
             <p className="text-sm">
-              Technologies: JavaScript, React.js, TailwindCss, React-Router, SPA
+              تکنولوژی ها: JavaScript, React.js, TailwindCss, React-Router, SPA
             </p>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
+
+            <div className="">
+              <div className="grid grid-cols-2 gap-2">
+                <div className="w-full h-fit rounded-lg overflow-hidden">
+                  <img
+                    src="/public/images/Mega_News/localhost_5174_ (1).webp"
+                    alt=""
+                  />
+                </div>
+
+                <div className="w-full h-fit rounded-lg overflow-hidden">
+                  <img
+                    src="/public/images/Mega_News/localhost_5174_ (2).webp"
+                    alt=""
+                  />
+                </div>
+
+                <div className="w-full h-fit rounded-lg overflow-hidden">
+                  <img
+                    src="/public/images/Mega_News/localhost_5174_ (3).webp"
+                    alt=""
+                  />
+                </div>
+
+                <div className="w-full h-fit rounded-lg overflow-hidden">
+                  <img
+                    src="/public/images/Mega_News/localhost_5174_ (4).webp"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/3.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/4.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+
+              <div className="w-full">
+                <div className="w-full h-fit overflow-hidden">
+                  <p className="text-center text-sm p-1">نسخه دسکتاپ</p>
+
+                  <img
+                    src="/public/images/Mega_News/descktop.webp"
+                    alt="descktop"
+                    className="rounded-lg"
+                  />
+                </div>
+
+                <div className="w-full h-fit overflow-hidden">
+                  <p className="text-center text-sm p-1">نسخه تبلت</p>
+
+                  <img
+                    src="/public/images/Mega_News/tablet.webp"
+                    alt="tablet"
+                    className="rounded-lg"
+                  />
+                </div>
+
+                <div className="w-full h-fit overflow-hidden">
+                  <p className="text-center text-sm p-1">نسخه موبایل</p>
+
+                  <img
+                    src="/public/images/Mega_News/mobile.webp"
+                    alt="mobile"
+                    className="rounded-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
