@@ -32,7 +32,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
         contactMe
           ? "visible opacity-100 scale-100"
           : "invisible opacity-0 scale-0"
-      } transition-all text-gray-300 absolute top-1/7 right-0 left-0 mx-5 md:mx-20 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      } transition-all text-gray-300  md:w-2xl absolute top-1/7 right-0 left-0 mx-5 md:mx-20 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
       dir="rtl"
     >
       <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]" dir="ltr">
@@ -52,7 +52,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
         </div>
       </header>
 
-      <div className="bg-[#1e1e1e] p-5 space-y-5 h-80 overflow-y-auto project">
+      <div className="bg-[#1e1e1e] p-5 space-y-5 h-80 md:h-fit overflow-y-auto project">
         <div className="w-20 h-20 bg-purple-400 rounded-full"></div>
 
         <h3 className="font-semibold text-2xl">در ارتباط باشیم</h3>

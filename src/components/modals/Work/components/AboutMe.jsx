@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="px-5 py-4 space-y-5" dir="rtl">
+    <div className="px-5 py-4 space-y-5 h-full overflow-y-auto project" dir="rtl">
       <div className="w-18 h-18 rounded-full bg-purple-500"></div>
 
       <h2 className="font-semibold">با توسعه‌دهنده پشت این کدها آشنا شوید</h2>

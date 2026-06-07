@@ -4,14 +4,14 @@ import { RiCloseLine } from "react-icons/ri";
 
 function CMD_TechStack({ techStack, setTechStack, topZ }) {
   const modalRef = useRef();
-   const [zIndex, setZIndex] = useState(10);
+  const [zIndex, setZIndex] = useState(10);
 
-   useEffect(() => {
-     if (techStack) {
-       topZ.current += 1;
-       setZIndex(topZ.current);
-     }
-   }, [techStack]);
+  useEffect(() => {
+    if (techStack) {
+      topZ.current += 1;
+      setZIndex(topZ.current);
+    }
+  }, [techStack]);
 
   const bringToFront = () => {
     topZ.current += 1;
@@ -28,7 +28,25 @@ function CMD_TechStack({ techStack, setTechStack, topZ }) {
         techStack
           ? "visible opacity-100 scale-100"
           : "invisible opacity-0 scale-0"
-      } transition-all text-gray-300 w-2xl absolute top-15 right-5 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      } 
+transition-all
+text-gray-300
+w-[90dvw]
+md:w-2xl
+absolute
+top-1/7
+left-1/2
+-translate-x-1/2
+md:left-auto
+md:translate-x-0
+md:top-15
+md:right-5
+bg-white
+rounded-xl
+overflow-hidden
+border
+border-stone-700
+shadow-xl`}
     >
       <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]">
         <div className="flex items-center gap-2">
@@ -46,12 +64,12 @@ function CMD_TechStack({ techStack, setTechStack, topZ }) {
           <RiCloseLine />
         </div>
       </header>
-      <div className="bg-[#1e1e1e] p-5 space-y-5">
+      <div className="bg-[#1e1e1e] p-5 space-y-5 h-80 sm:h-fit overflow-y-auto">
         <p className="text-sm">
           <span className="font-semibold">@maryam</span> % show techstack
         </p>
 
-        <div className="">
+        <div className="md:inline hidden">
           <div className="grid grid-cols-2 border-b-2 border-dashed border-stone-200 pb-3">
             <span className="">Category</span>
             <span className="">Technologies</span>
@@ -73,9 +91,28 @@ function CMD_TechStack({ techStack, setTechStack, topZ }) {
           </div>
         </div>
 
+        <div className="md:hidden space-y-2 border-b-2 border-dashed border-stone-200 pb-5">
+          <div>
+            <span className="block text-[#2dd987]">Frontend</span>
+            <span>JavaScript, React, TypeScript</span>
+          </div>
+          <div>
+            <span className="block text-[#2dd987]">Styling</span>
+            <span>Tailwind, CSS</span>
+          </div>
+          <div>
+            <span className="block text-[#2dd987]">Database</span>
+            <span>Firebase, Familiar with MySQL</span>
+          </div>
+          <div>
+            <span className="block text-[#2dd987]">Dev Tools</span>
+            <span>Git, GitHub, Postman</span>
+          </div>
+        </div>
+
         <div className="text-sm">
           <p className="text-[#2dd987]">
-            5 of 5 stacks loaded successfuly (100%)
+            4 of 4 stacks loaded successfuly (100%)
           </p>
           <p className="pt-1">Render time: 6ms</p>
         </div>

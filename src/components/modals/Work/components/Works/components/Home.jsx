@@ -12,7 +12,7 @@ function Home({ setActiveTab }) {
       </li>
       <li
         onClick={() => setActiveTab("news_magazine")}
-        className="absolute top-70 left-10 hover:scale-95 transition-transform cursor-pointer"
+        className="absolute top-50 md:top-70 left-10 hover:scale-95 transition-transform cursor-pointer"
       >
         <img src="/images/folder.png" alt="folder-icon" />
         <span className="text-center">

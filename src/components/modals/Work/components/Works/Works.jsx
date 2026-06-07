@@ -29,22 +29,22 @@ function Works() {
             </p>
             <div className="grid grid-cols-2 gap-2">
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
+                <img src="/projects_images/1.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+                <img src="/projects_images/2.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/3.jpg" alt="" />
+                <img src="/projects_images/3.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/4.jpg" alt="" />
+                <img src="/projects_images/4.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
+                <img src="/projects_images/1.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+                <img src="/projects_images/2.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -71,22 +71,22 @@ function Works() {
             </p>
             <div className="grid grid-cols-2 gap-2">
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
+                <img src="/projects_images/1.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+                <img src="/projects_images/2.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/3.jpg" alt="" />
+                <img src="/projects_images/3.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/4.jpg" alt="" />
+                <img src="/projects_images/4.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/1.jpg" alt="" />
+                <img src="/projects_images/1.jpg" alt="" />
               </div>
               <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/public/projects_images/2.jpg" alt="" />
+                <img src="/projects_images/2.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ function Works() {
             </p>
 
             <p className="text-sm">
-              لینک گیتهاب پروژه:{" "}
+              لینک گیتهاب پروژه:
               <a
                 href="https://github.com/mariacnru/news-magazine-landing.git"
                 target="_blank"
@@ -130,28 +130,28 @@ function Works() {
               <div className="grid grid-cols-2 gap-2">
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/public/images/Mega_News/localhost_5174_ (1).webp"
+                    src="/images/Mega_News/localhost_5174_ (1).webp"
                     alt=""
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/public/images/Mega_News/localhost_5174_ (2).webp"
+                    src="/images/Mega_News/localhost_5174_ (2).webp"
                     alt=""
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/public/images/Mega_News/localhost_5174_ (3).webp"
+                    src="/images/Mega_News/localhost_5174_ (3).webp"
                     alt=""
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/public/images/Mega_News/localhost_5174_ (4).webp"
+                    src="/images/Mega_News/localhost_5174_ (4).webp"
                     alt=""
                   />
                 </div>
@@ -162,8 +162,9 @@ function Works() {
                   <p className="text-center text-sm p-1">نسخه دسکتاپ</p>
 
                   <img
-                    src="/public/images/Mega_News/descktop.webp"
+                    src="/images/Mega_News/descktop.webp"
                     alt="descktop"
+                    loading="lazy"
                     className="rounded-lg"
                   />
                 </div>
@@ -172,8 +173,9 @@ function Works() {
                   <p className="text-center text-sm p-1">نسخه تبلت</p>
 
                   <img
-                    src="/public/images/Mega_News/tablet.webp"
+                    src="/images/Mega_News/tablet.webp"
                     alt="tablet"
+                    loading="lazy"
                     className="rounded-lg"
                   />
                 </div>
@@ -182,8 +184,9 @@ function Works() {
                   <p className="text-center text-sm p-1">نسخه موبایل</p>
 
                   <img
-                    src="/public/images/Mega_News/mobile.webp"
+                    src="/images/Mega_News/mobile.webp"
                     alt="mobile"
+                    loading="lazy"
                     className="rounded-lg"
                   />
                 </div>
@@ -204,7 +207,7 @@ function Works() {
             <h3 className="font-semibold text-white">نام پروژه: وبسایت شخصی</h3>
             <p className="text-sm">
               یک وبسایت نمونه‌کار شخصی مدرن و تک‌صفحه‌ای <bdi>(SPA)</bdi>
-              ساخته‌شده با <bdi>React.js</bdi>، دارای طراحی واکنش‌گرا{" "}
+              ساخته‌شده با <bdi>React.js</bdi>، دارای طراحی واکنش‌گرا
               <bdi>(Responsive)</bdi>، رابط کاربری روان، و پشتیبانی از حالت روشن
               و تاریک برای نمایش پروژه‌ها، مهارت‌ها و اطلاعات تماس و مقالات.
             </p>
@@ -214,7 +217,7 @@ function Works() {
             </p>
 
             <p className="text-sm">
-              لینک گیتهاب پروژه:{" "}
+              لینک گیتهاب پروژه:
               <a
                 href="https://github.com/mariacnru/frontEnd-developer-portfolio.git"
                 target="_blank"
@@ -228,24 +231,40 @@ function Works() {
               <div className="grid grid-cols-2 gap-2">
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <p className="text-sm text-center p-2">لایت مود</p>
-                  <img src="/public/images/personal_website/1.webp" alt="" />
+                  <img src="/images/personal_website/1.webp" alt="" />
                 </div>
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <p className="text-sm text-center p-2">دارک مود</p>
-                  <img src="/public/images/personal_website/2.webp" alt="" />
+                  <img src="/images/personal_website/2.webp" alt="" />
                 </div>
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
-                <img src="/public/images/personal_website/3.webp" alt="" />
+                <img
+                  src="/images/personal_website/3.webp"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
-                <img src="/public/images/personal_website/4.webp" alt="" />
+                <img
+                  src="/images/personal_website/4.webp"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
-                <img src="/public/images/personal_website/5.webp" alt="" />
+                <img
+                  src="/images/personal_website/5.webp"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
-                <img src="/public/images/personal_website/6.webp" alt="" />
+                <img
+                  src="/images/personal_website/6.webp"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

@@ -29,9 +29,36 @@ function Work({ works, setWorks, topZ }) {
       style={{ zIndex }}
       className={`${
         works ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-0"
-      } flex transition-all text-gray-300 w-2xl absolute top-1/5 left-5 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      } block md:flex transition-all text-gray-300 w-dvw md:w-2xl absolute md:top-1/5 top-15 left-0 md:left-5 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
     >
-      <aside className="w-45 bg-[#323137] px-3 py-4">
+      <nav className="md:hidden flex justify-between items-center bg-[#323137]">
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
+          <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
+          <div className="w-3 h-3 rounded-full bg-[#28c840]"></div>
+        </div>
+
+        <ul className="text-sm *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:rounded-lg *:transition-colors cursor-pointer">
+          <li onClick={() => setActiveTab("about")}>
+            <img src="/public/icons/info.svg" alt="" /> About me
+          </li>
+          <li onClick={() => setActiveTab("work")}>
+            <img src="/public/icons/work.svg" alt="" /> Work
+          </li>
+          <li onClick={() => setActiveTab("resume")}>
+            <img src="/public/icons/file.svg" alt="" /> Resume
+          </li>
+        </ul>
+
+        <div
+          onClick={() => setWorks(false)}
+          className="justify-self-end cursor-pointer"
+        >
+          <RiCloseLine />
+        </div>
+      </nav>
+
+      <aside className="hidden md:inline w-45 bg-[#323137] px-3 py-4">
         <div className="flex items-center gap-2 mb-4 ml-2">
           <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
           <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
@@ -67,8 +94,8 @@ function Work({ works, setWorks, topZ }) {
         </ul>
       </aside>
 
-      <div className="w-full h-112.5 bg-[#1e1e1e] ">
-        <header className="grid grid-cols-2 p-2 border-b border-stone-700">
+      <div className="w-full h-90 md:h-112.5 bg-[#1e1e1e]">
+        <header className="hidden md:grid grid-cols-2 p-2 border-b border-stone-700">
           <div className="">
             <p className="text-sm font-semibold">Work</p>
           </div>

@@ -11,7 +11,9 @@ function Navbar() {
 
         <ul>
           {navLinks.map(({ id, name }) => (
-            <li key={id}>{name}</li>
+            <li key={id} className="hidden md:inline">
+              {name}
+            </li>
           ))}
         </ul>
       </div>

@@ -3,7 +3,7 @@ import { footerIcons } from "../constants";
 
 function Footer({ setContactMe, setTechStack, setWorks }) {
   return (
-    <div className="h-fit w-fit absolute bottom-5 m-auto left-0 right-0 bg-white/20 backdrop-blur-3xl border border-white/20 px-7 py-1 rounded-2xl">
+    <div className="h-fit w-fit absolute bottom-5 mx-auto left-0 right-0 bg-white/20 backdrop-blur-3xl border border-white/20 px-3 sm:px-7 py-1 rounded-2xl">
       <ul className="flex items-center *:hover:transform *:hover:-translate-y-5 *:transition-transform *:cursor-pointer">
         <li
           onClick={() => setWorks(true)}

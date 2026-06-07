@@ -2,11 +2,12 @@ import React from "react";
 
 function Resume() {
   return (
-    <div className="p-5 h-100 overflow-y-auto font-dana project" dir="rtl">
+    <div
+      className="p-5 h-80 md:h-100 overflow-y-auto font-dana project"
+      dir="rtl"
+    >
       <div className="p-2 text-center">
-        <h2 className="font-morraba text-2xl text-blue-500">
-          مریم احمدآبادی
-        </h2>
+        <h2 className="font-morraba text-2xl text-blue-500">مریم احمدآبادی</h2>
         <h2>Frontend Developer</h2>
       </div>
 
@@ -53,7 +54,7 @@ function Resume() {
         <h3 className="font-semibold font-morraba text-blue-500 border-b border-blue-500 pb-2">
           مهارت ها
         </h3>
-        <div className="grid grid-cols-2 gap-x-5 gap-y-2 *:w-full py-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2 *:w-full py-2">
           <span>HTML | حرفه ای</span>
           <span>CSS | حرفه ای</span>
           <span>JavaScript | پیشرفته</span>
