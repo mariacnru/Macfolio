@@ -2,11 +2,13 @@
 
 @font-face {
   font-family: "morraba";
-  src: url(/public/fonts/Morabba/woff2/Morabba-Medium.woff2);
+  src: url(/fonts/Morabba/woff2/Morabba-Medium.woff2);
+  font-display: swap;
 }
 @font-face {
   font-family: "dana";
-  src: url(/public/fonts/Dana/woff2/DanaFaNum-Regular.woff2);
+  src: url(/fonts/Dana/woff2/DanaFaNum-Regular.woff2);
+  font-display: swap;
 }
 
 html,
@@ -14,7 +16,7 @@ body {
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
-  background-image: url(/images/wallpaper.png);
+  background-image: url(/images/wallpaper.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,21 +24,8 @@ body {
 }
 
 @theme {
-  --breakpoint-3xl: 1920px;
   --font-morraba: "morraba";
   --font-dana: "dana";
-}
-
-@utility flex-center {
-  @apply flex justify-center items-center;
-}
-
-@utility col-center {
-  @apply flex flex-col justify-center items-center;
-}
-
-@utility abs-center {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
 @layer base {

@@ -13,11 +13,34 @@ const navIcons = [
 ];
 
 const footerIcons = [
-  { id: 1, img: "/images/finder.png" },
-  { id: 2, img: "/images/safari.png" },
-  { id: 3, img: "/images/photos.png" },
-  { id: 4, img: "/images/contact.png" },
-  { id: 5, img: "/images/terminal.png" },
+  {
+    id: 1,
+    title: "Work",
+    img: "/images/finder.webp",
+    action: "works",
+  },
+  {
+    id: 2,
+    title: "Blog",
+    img: "/images/safari.webp",
+  },
+  {
+    id: 3,
+    title: "Gallery",
+    img: "/images/photos.webp",
+  },
+  {
+    id: 4,
+    title: "Contact Me",
+    img: "/images/contact.webp",
+    action: "contact",
+  },
+  {
+    id: 5,
+    title: "Tech Stack",
+    img: "/images/terminal.webp",
+    action: "tech",
+  },
 ];
 
 export { navLinks, navIcons, footerIcons };

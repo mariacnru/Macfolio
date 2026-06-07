@@ -29,7 +29,7 @@ function Work({ works, setWorks, topZ }) {
       style={{ zIndex }}
       className={`${
         works ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-0"
-      } block md:flex transition-all text-gray-300 w-dvw md:w-2xl absolute md:top-1/5 top-15 left-0 md:left-5 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      } block md:flex transition-all text-gray-300 w-dvw md:w-2xl absolute md:top-1/5 top-15 md:left-5 mx-5 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
     >
       <nav className="md:hidden flex justify-between items-center bg-[#323137]">
         <div className="flex items-center gap-2">
