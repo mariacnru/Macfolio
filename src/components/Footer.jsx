@@ -1,13 +1,15 @@
 import React from "react";
 import { footerIcons } from "../constants";
 
-function Footer({ setContactMe, setTechStack, setWorks }) {
+function Footer({ setContactMe, setTechStack, setWorks, setBlog }) {
   const handleClick = (action) => {
     if (action === "works") setWorks(true);
 
     if (action === "contact") setContactMe(true);
 
     if (action === "tech") setTechStack(true);
+
+    if (action === "blog") setBlog(true);
   };
 
   return (

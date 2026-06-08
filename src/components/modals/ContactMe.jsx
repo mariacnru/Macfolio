@@ -18,7 +18,6 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
 
   const bringToFront = () => {
     topZ.current += 1;
-    console.log(modalRef.current);
 
     modalRef.current.style.zIndex = topZ.current;
   };

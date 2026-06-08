@@ -23,6 +23,7 @@ const footerIcons = [
     id: 2,
     title: "Blog",
     img: "/images/safari.webp",
+    action: "blog",
   },
   {
     id: 3,
