@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { RiCloseLine } from "react-icons/ri";
+import Header from "./components/Header";
 
 function Blog({ blog, setBlog, topZ }) {
   const modalRef = useRef();
@@ -45,22 +45,7 @@ function Blog({ blog, setBlog, topZ }) {
         border-stone-700
         shadow-xl`}
     >
-      <header className="grid grid-cols-3 px-1.5 py-2 bg-[#3f4042]">
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-full bg-[#ff5f57]"></div>
-          <div className="w-4 h-4 rounded-full bg-[#febc2e]"></div>
-          <div className="w-4 h-4 rounded-full bg-[#28c840]"></div>
-        </div>
-        <div className="justify-self-center">
-          <p className="text-sm font-semibold">Tech Stack</p>
-        </div>
-        <div
-          onClick={() => setBlog(false)}
-          className="justify-self-end cursor-pointer"
-        >
-          <RiCloseLine />
-        </div>
-      </header>
+      <Header setBlog={setBlog} />
     </div>
   );
 }

@@ -6,7 +6,7 @@ function Navbar() {
   const currentTime = useMemo(() => dayjs().format("ddd MMM D h:mm A"), []);
 
   return (
-    <nav className="flex items-center justify-between px-5 py-3">
+    <nav className="flex items-center justify-between px-5 py-2">
       <div className="flex items-center gap-5">
         <img src="/images/logo.svg" alt="logo" width={15} height={15} />
 
