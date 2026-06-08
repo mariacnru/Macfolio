@@ -11,7 +11,7 @@ function Footer({ setContactMe, setTechStack, setWorks }) {
   };
 
   return (
-    <div
+    <footer
       className="
         absolute
         bottom-5
@@ -34,13 +34,14 @@ function Footer({ setContactMe, setTechStack, setWorks }) {
             key={id}
             onClick={() => handleClick(action)}
             className="
+              relative
               flex
               flex-col
               items-center
               cursor-pointer
-              transition-transform
               duration-200
               hover:-translate-y-2
+              transition-all
             "
           >
             <img
@@ -52,11 +53,13 @@ function Footer({ setContactMe, setTechStack, setWorks }) {
               className="w-12 sm:w-16"
             />
 
-            <p className="text-[10px] text-stone-100 mt-1">{title}</p>
+            <p className="hidden opacity-0 text-[11px] text-stone-100 mt-1 absolute -top-12 bg-white/20 py-1 px-3 text-nowrap rounded-md">
+              {title}
+            </p>
           </li>
         ))}
       </ul>
-    </div>
+    </footer>
   );
 }
 
