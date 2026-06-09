@@ -1,5 +1,5 @@
 import React from "react";
-import { RiCloseLine } from "react-icons/ri";
+import { RiCloseLine, RiSearch2Line } from "react-icons/ri";
 
 function Header({ setBlog }) {
   return (
@@ -12,11 +12,16 @@ function Header({ setBlog }) {
       <div className="flex items-center gap-2 justify-self-center">
         <p className="text-sm font-semibold text-nowrap">Blog</p>
 
-        <input
-          type="text"
-          placeholder="search..."
-          className="bg-[#3a3b47] text-sm rounded-md text-center py-0.5"
-        />
+        <label className="bg-[#3a3b47] flex gap-2 items-center text-sm rounded-md text-center py-0.5 px-2">
+          <div className="text-gray-300">
+            <RiSearch2Line />
+          </div>
+          <input
+            type="text"
+            placeholder="search..."
+            className="focus:outline-0"
+          />
+        </label>
       </div>
       <div
         onClick={() => setBlog(false)}

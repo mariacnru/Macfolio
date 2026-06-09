@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Header from "./components/Header";
+import Content from "./components/Content";
 
 function Blog({ blog, setBlog, topZ }) {
   const modalRef = useRef();
@@ -46,6 +47,7 @@ function Blog({ blog, setBlog, topZ }) {
         shadow-xl`}
     >
       <Header setBlog={setBlog} />
+      <Content />
     </div>
   );
 }
