@@ -40,13 +40,13 @@ function Work({ works, setWorks, topZ }) {
 
         <ul className="text-sm *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:rounded-lg *:transition-colors cursor-pointer">
           <li onClick={() => setActiveTab("about")}>
-            <img src="/public/icons/info.svg" alt="" /> About me
+            <img src="/icons/info.svg" alt="" /> About me
           </li>
           <li onClick={() => setActiveTab("work")}>
-            <img src="/public/icons/work.svg" alt="" /> Work
+            <img src="/icons/work.svg" alt="" /> Work
           </li>
           <li onClick={() => setActiveTab("resume")}>
-            <img src="/public/icons/file.svg" alt="" /> Resume
+            <img src="/icons/file.svg" alt="" /> Resume
           </li>
         </ul>
 
@@ -70,26 +70,26 @@ function Work({ works, setWorks, topZ }) {
             Favorites
           </li>
           <li onClick={() => setActiveTab("about")}>
-            <img src="/public/icons/info.svg" alt="" /> About me
+            <img src="/icons/info.svg" alt="" /> About me
           </li>
           <li onClick={() => setActiveTab("work")}>
-            <img src="/public/icons/work.svg" alt="" /> Work
+            <img src="/icons/work.svg" alt="" /> Work
           </li>
           <li onClick={() => setActiveTab("resume")}>
-            <img src="/public/icons/file.svg" alt="" /> Resume
+            <img src="/icons/file.svg" alt="" /> Resume
           </li>
         </ul>
 
         <ul className="text-sm mt-2 *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:p-2 *:rounded-lg *:transition-colors cursor-pointer">
           <li className="text-xs text-stone-500 font-semibold">Projects</li>
           <li>
-            <img src="/public/icons/file.svg" alt="" /> project 1
+            <img src="/icons/file.svg" alt="" /> project 1
           </li>
           <li>
-            <img src="/public/icons/file.svg" alt="" /> project 2
+            <img src="/icons/file.svg" alt="" /> project 2
           </li>
           <li>
-            <img src="/public/icons/file.svg" alt="" /> project 3
+            <img src="/icons/file.svg" alt="" /> project 3
           </li>
         </ul>
       </aside>
