@@ -1,21 +1,54 @@
-import React from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import React, { memo, useState } from "react";
+import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
 function BlogCard({ title, description, img }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="flex items-center w-96">
-      <div className="">
-        <img src={img} alt="" width={80} height={80}/>
-      </div>
-      <div className="space-y-2">
-        <span className="text-xs">17 july</span>
-        <h3 className="text-white text-sm">{title}</h3>
-        <div className="text-blue-500 flex items-center text-xs hover:underline cursor-pointer">
-          <p>Check out the full post</p> <MdKeyboardArrowRight size={15} />
+    <article className="w-full max-w-md p-3 rounded-lg hover:bg-[#2a2a2a] transition-colors duration-200">
+      <div className="flex items-start gap-4">
+        <div className="w-20 h-20 rounded-md overflow-hidden flex-shrink-0 bg-[#2c2c2c]">
+          <img
+            src={img}
+            alt={title}
+            loading="lazy"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="flex flex-col gap-2 flex-1 min-w-0">
+          <span className="text-xs text-zinc-400">17 July</span>
+
+          <h3 className="text-white text-sm font-medium line-clamp-2">
+            {title}
+          </h3>
+
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-blue-500 flex items-center text-xs hover:underline w-fit"
+          >
+            <span>
+              {open ? "Hide post details" : "Check out the full post"}
+            </span>
+
+            {open ? (
+              <MdKeyboardArrowDown size={15} />
+            ) : (
+              <MdKeyboardArrowRight size={15} />
+            )}
+          </button>
         </div>
       </div>
-    </div>
+
+      {open && (
+        <div className="mt-4 pl-24">
+          <p className="text-zinc-400 text-xs leading-6 whitespace-pre-line">
+            {description}
+          </p>
+        </div>
+      )}
+    </article>
   );
 }
 
-export default BlogCard;
+export default memo(BlogCard);
