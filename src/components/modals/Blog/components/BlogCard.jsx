@@ -1,11 +1,11 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-function BlogCard({ title, description }) {
+function BlogCard({ title, description, img }) {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-96">
       <div className="">
-        <img src="" alt="" />
+        <img src={img} alt="" width={80} height={80}/>
       </div>
       <div className="space-y-2">
         <span className="text-xs">17 july</span>

@@ -48,7 +48,7 @@ const blogItems = [
   {
     id: 1,
     title: "How I Built My macOS-Style Dev Portfolio with React + Tailwind",
-    img: "/images/blog/macos-portfolio.jpg",
+    img: "/images/blog/1.jpg",
     description: `
 I wanted my portfolio to feel different from the typical developer websites, so I decided to design it with a macOS-inspired interface. The goal was to create something interactive, modern, and visually memorable while still keeping the experience smooth and easy to use. React helped me build reusable UI sections, and Tailwind CSS made styling and responsiveness much faster.
 
@@ -61,7 +61,7 @@ Through this project, I learned how important user experience is in frontend dev
   {
     id: 2,
     title: "How I Organize My Projects for Sanity and Speed",
-    img: "/images/blog/project-organization.jpg",
+    img: "/images/blog/2.webp",
     description: `
 As my projects became larger, I realized that messy structures slow down development more than difficult code. I started focusing on building a clean and scalable workflow that keeps everything predictable and easy to maintain. Organizing projects properly saves time, reduces stress, and makes collaboration easier.
 
@@ -74,7 +74,7 @@ Good organization is not about following strict rules — it is about creating a
   {
     id: 3,
     title: "Small UX Details That Make a Big Difference",
-    img: "/images/blog/ux-details.jpg",
+    img: "/images/blog/3.webp",
     description: `
 Many people focus only on layouts and colors, but great user experiences are often created through tiny details. Small interactions like hover animations, smooth transitions, button feedback, and loading states can completely change how professional a website feels.
 
@@ -87,7 +87,7 @@ The biggest lesson I learned is that users notice how an interface feels even wh
   {
     id: 4,
     title: "Why I Switched to a Minimal Developer Workflow",
-    img: "/images/blog/minimal-workflow.jpg",
+    img: "/images/blog/4.webp",
     description: `
 At one point, I was constantly trying new productivity apps, browser extensions, and development tools. Instead of helping me work faster, they created distraction and unnecessary complexity. Eventually, I decided to simplify everything and focus only on tools that genuinely improved my workflow.
 
@@ -100,7 +100,7 @@ Minimalism in development is not about limiting creativity — it is about remov
   {
     id: 5,
     title: "Building Reusable UI Components That Actually Scale",
-    img: "/images/blog/reusable-components.jpg",
+    img: "/images/blog/5.webp",
     description: `
 Reusable components are one of the biggest strengths of modern frontend frameworks like React. Early on, I used to duplicate UI sections across projects, which quickly became difficult to maintain. Over time, I learned how important component architecture is for scalability and long-term development.
 
@@ -113,7 +113,7 @@ A well-structured component system speeds up development, improves consistency, 
   {
     id: 6,
     title: "My Favorite Frontend Animation Techniques",
-    img: "/images/blog/frontend-animations.jpg",
+    img: "/images/blog/6.webp",
     description: `
 Animations can make websites feel more alive and interactive when used correctly. I enjoy using motion not just for visual appeal, but also for improving communication between the interface and the user. Smooth transitions help users understand what is happening on the screen.
 
@@ -126,7 +126,7 @@ Good animation design creates rhythm and personality inside an interface. Even s
   {
     id: 7,
     title: "Lessons I Learned from Rebuilding My Portfolio Twice",
-    img: "/images/blog/portfolio-lessons.jpg",
+    img: "/images/blog/7.webp",
     description: `
 Rebuilding my portfolio multiple times taught me that design trends alone are not enough to create a strong personal website. My earlier versions looked visually interesting, but they lacked structure, clarity, and a strong sense of identity.
 

@@ -7,9 +7,11 @@ function Content() {
     <div className="bg-[#1e1e1e] h-100 py-10 flex flex-col items-center overflow-y-auto project">
       <h3 className="text-rose-500 font-semibold mb-8">My Developer Blog</h3>
 
-      {blogItems.map((item) => (
-        <BlogCard key={item.id} {...item} />
-      ))}
+      <div className="space-y-5">
+        {blogItems.map((item) => (
+          <BlogCard key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   );
 }
