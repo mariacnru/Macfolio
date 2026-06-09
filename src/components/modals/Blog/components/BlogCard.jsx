@@ -5,7 +5,9 @@ function BlogCard({ title, description, img }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <article className="w-full max-w-md p-3 rounded-lg hover:bg-[#2a2a2a] transition-colors duration-200">
+    <article
+      className={`w-full max-w-md p-3 rounded-lg hover:bg-[#2a2a2a] transition-colors duration-200 ${open ? "bg-[#2a2a2a]" : "bg-transparent"}`}
+    >
       <div className="flex items-start gap-4">
         <div className="w-20 h-20 rounded-md overflow-hidden flex-shrink-0 bg-[#2c2c2c]">
           <img
@@ -25,7 +27,7 @@ function BlogCard({ title, description, img }) {
 
           <button
             onClick={() => setOpen(!open)}
-            className="text-blue-500 flex items-center text-xs hover:underline w-fit"
+            className="text-blue-500 flex items-center text-xs hover:underline w-fit cursor-pointer"
           >
             <span>
               {open ? "Hide post details" : "Check out the full post"}

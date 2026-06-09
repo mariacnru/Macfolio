@@ -11,17 +11,6 @@ function Header({ setBlog }) {
       </div>
       <div className="flex items-center gap-2 justify-self-center">
         <p className="text-sm font-semibold text-nowrap">Blog</p>
-
-        <label className="bg-[#3a3b47] flex gap-2 items-center text-sm rounded-md text-center py-0.5 px-2">
-          <div className="text-gray-300">
-            <RiSearch2Line />
-          </div>
-          <input
-            type="text"
-            placeholder="search..."
-            className="focus:outline-0"
-          />
-        </label>
       </div>
       <div
         onClick={() => setBlog(false)}
