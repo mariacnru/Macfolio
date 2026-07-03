@@ -25,12 +25,7 @@ function Welcome() {
       </p>
       <p className="text-sm sm:text-base">Hey, I'm Maryam! Welcom to my</p>
 
-      <h1 className="mt-7 relative">
-        <span className="text-7xl sm:text-9xl italic block">portfolio</span>
-        <span className="absolute top-5 -left-12 -rotate-12 bg-white/20 backdrop-blur-[3px] border border-white/50 p-2 rounded-lg text-[12px]">
-          detail-oriented front-end developer
-        </span>
-      </h1>
+      <h1 className="mt-7 text-7xl sm:text-9xl italic relative">portfolio</h1>
     </section>
   );
 }
