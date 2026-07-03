@@ -47,7 +47,7 @@ function Footer({ setContactMe, setTechStack, setWorks, setBlog }) {
             "
           >
             <img
-              src={`/Macfolio${img}`}
+              src={img}
               alt={`${title}-icon`}
               width={68}
               height={68}

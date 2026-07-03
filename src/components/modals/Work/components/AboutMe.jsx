@@ -8,7 +8,7 @@ function AboutMe() {
     >
       <div className="w-18 h-18 rounded-full overflow-hidden">
         <img
-          src="/images/profile_picture.jpg"
+          src="/Macfolio/images/profile_picture.jpg"
           alt="profile_picture"
           width={72}
           height={72}
@@ -35,7 +35,7 @@ function AboutMe() {
 
         <span>
           خارج از دنیای برنامه‌نویسی، احتمالاً من رو در حال تغییر دادن طراحی
-       صفحات تا ساعت ۲ شب، نوشیدن قهوه، یا خرید گجت‌هایی می‌بینید که خودم رو
+          صفحات تا ساعت ۲ شب، نوشیدن قهوه، یا خرید گجت‌هایی می‌بینید که خودم رو
           قانع کرده‌ام به اون ها نیاز دارم 😅
         </span>
       </p>

@@ -1,39 +1,39 @@
 const navIcons = [
-  { id: 1, img: "/icons/wifi.svg" },
-  { id: 2, img: "/icons/search.svg" },
-  { id: 3, img: "/icons/user.svg" },
-  { id: 4, img: "/icons/mode.svg" },
-  { id: 5, img: "/icons/user.svg" },
+  { id: 1, img: "/Macfolio/icons/wifi.svg" },
+  { id: 2, img: "/Macfolio/icons/search.svg" },
+  { id: 3, img: "/Macfolio/icons/user.svg" },
+  { id: 4, img: "/Macfolio/icons/mode.svg" },
+  { id: 5, img: "/Macfolio/icons/user.svg" },
 ];
 
 const footerIcons = [
   {
     id: 1,
     title: "Work",
-    img: "/images/finder.webp",
+    img: "/Macfolio/images/finder.webp",
     action: "works",
   },
   {
     id: 2,
     title: "Blog",
-    img: "/images/safari.webp",
+    img: "/Macfolio/images/safari.webp",
     action: "blog",
   },
   {
     id: 3,
     title: "Gallery",
-    img: "/images/photos.webp",
+    img: "/Macfolio/images/photos.webp",
   },
   {
     id: 4,
     title: "Contact Me",
-    img: "/images/contact.webp",
+    img: "/Macfolio/images/contact.webp",
     action: "contact",
   },
   {
     id: 5,
     title: "Tech Stack",
-    img: "/images/terminal.webp",
+    img: "/Macfolio/images/terminal.webp",
     action: "tech",
   },
 ];
@@ -42,7 +42,7 @@ const blogItems = [
   {
     id: 1,
     title: "چطور پورتفولیوی React + Tailwind خودم رو شبیه macOS ساختم",
-    img: "/images/blog/1.jpg",
+    img: "/Macfolio/images/blog/1.jpg",
     description: `
 می‌خواستم پورتفولیوم یه چیز معمولی و تکراری نباشه، برای همین رفتم سمت یه طراحی الهام‌گرفته از macOS. هدفم این بود یه فضای تعاملی، مدرن و جذاب بسازم که کاربر هم حس کنه داره با یه دسکتاپ واقعی کار می‌کنه، نه یه سایت ساده.
 
@@ -57,7 +57,7 @@ React خیلی کمکم کرد تا بخش‌ها رو تمیز و قابل اس
   {
     id: 2,
     title: "چطور پروژه‌هام رو مرتب نگه می‌دارم که قاطی نشن",
-    img: "/images/blog/2.webp",
+    img: "/Macfolio/images/blog/2.webp",
     description: `
 اوایل کارم پروژه‌هام خیلی شلوغ و نامرتب بودن و همین باعث می‌شد خیلی وقت‌ها خودم هم گیج بشم. کم‌کم فهمیدم نظم توی ساختار پروژه حتی از خود کد هم مهم‌تره.
 
@@ -72,7 +72,7 @@ React خیلی کمکم کرد تا بخش‌ها رو تمیز و قابل اس
   {
     id: 3,
     title: "جزئیات کوچیکی که تجربه کاربری رو حرفه‌ای می‌کنن",
-    img: "/images/blog/3.webp",
+    img: "/Macfolio/images/blog/3.webp",
     description: `
 خیلی وقت‌ها ما فقط به ظاهر کلی سایت توجه می‌کنیم، ولی چیزی که واقعاً حس حرفه‌ای بودن می‌ده، جزئیات کوچیکه.
 
@@ -87,7 +87,7 @@ React خیلی کمکم کرد تا بخش‌ها رو تمیز و قابل اس
   {
     id: 4,
     title: "چرا رفتم سمت یه ورک‌فلو ساده‌تر و مینیمال",
-    img: "/images/blog/4.webp",
+    img: "/Macfolio/images/blog/4.webp",
     description: `
 یه زمانی پر بودم از ابزارهای مختلف، افزونه‌ها و اپ‌های بهره‌وری. ولی راستش بیشتر از اینکه کمک کنن، فقط حواسم رو پرت می‌کردن.
 
@@ -102,7 +102,7 @@ React خیلی کمکم کرد تا بخش‌ها رو تمیز و قابل اس
   {
     id: 5,
     title: "چطور کامپوننت‌های قابل استفاده مجدد می‌سازم",
-    img: "/images/blog/5.webp",
+    img: "/Macfolio/images/blog/5.webp",
     description: `
 اوایل خیلی از UIها رو کپی می‌کردم و همین باعث می‌شد پروژه‌ها سنگین و غیرقابل مدیریت بشن.
 
@@ -117,7 +117,7 @@ React خیلی کمکم کرد تا بخش‌ها رو تمیز و قابل اس
   {
     id: 6,
     title: "انیمیشن‌هایی که تو فرانت‌اند بیشتر ازشون استفاده می‌کنم",
-    img: "/images/blog/6.webp",
+    img: "/Macfolio/images/blog/6.webp",
     description: `
 انیمیشن اگه درست استفاده بشه، می‌تونه یه سایت ساده رو خیلی زنده‌تر کنه.
 
@@ -132,7 +132,7 @@ React خیلی کمکم کرد تا بخش‌ها رو تمیز و قابل اس
   {
     id: 7,
     title: "چیزهایی که از دوباره ساختن پورتفولیوم یاد گرفتم",
-    img: "/images/blog/7.webp",
+    img: "/Macfolio/images/blog/7.webp",
     description: `
 دو بار پورتفولیوم رو از صفر ساختم و هر بار یه چیز جدید یاد گرفتم.
 

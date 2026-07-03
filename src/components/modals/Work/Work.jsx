@@ -40,13 +40,13 @@ function Work({ works, setWorks, topZ }) {
 
         <ul className="text-sm *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:rounded-lg *:transition-colors cursor-pointer">
           <li onClick={() => setActiveTab("about")}>
-            <img src="/icons/info.svg" alt="" /> درباره من
+            <img src="/Macfolio/icons/info.svg" alt="" /> درباره من
           </li>
           <li onClick={() => setActiveTab("work")}>
-            <img src="/icons/work.svg" alt="" /> نمونه کار ها
+            <img src="/Macfolio/icons/work.svg" alt="" /> نمونه کار ها
           </li>
           <li onClick={() => setActiveTab("resume")}>
-            <img src="/icons/file.svg" alt="" /> رزومه
+            <img src="/Macfolio/icons/file.svg" alt="" /> رزومه
           </li>
         </ul>
 
@@ -70,26 +70,26 @@ function Work({ works, setWorks, topZ }) {
             Favorites
           </li>
           <li onClick={() => setActiveTab("about")}>
-            <img src="/icons/info.svg" alt="" /> درباره من
+            <img src="/Macfolio/icons/info.svg" alt="" /> درباره من
           </li>
           <li onClick={() => setActiveTab("work")}>
-            <img src="/icons/work.svg" alt="" /> نمونه کار ها
+            <img src="/Macfolio/icons/work.svg" alt="" /> نمونه کار ها
           </li>
           <li onClick={() => setActiveTab("resume")}>
-            <img src="/icons/file.svg" alt="" /> رزومه
+            <img src="/Macfolio/icons/file.svg" alt="" /> رزومه
           </li>
         </ul>
 
         <ul className="text-sm mt-2 *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:p-2 *:rounded-lg *:transition-colors cursor-pointer">
           <li className="text-xs text-stone-500 font-semibold">Projects</li>
           <li>
-            <img src="/icons/file.svg" alt="" /> project 1
+            <img src="/Macfolio/icons/file.svg" alt="" /> project 1
           </li>
           <li>
-            <img src="/icons/file.svg" alt="" /> project 2
+            <img src="/Macfolio/icons/file.svg" alt="" /> project 2
           </li>
           <li>
-            <img src="/icons/file.svg" alt="" /> project 3
+            <img src="/Macfolio/icons/file.svg" alt="" /> project 3
           </li>
         </ul>
       </aside>
