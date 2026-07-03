@@ -19,7 +19,9 @@ function Footer({ setContactMe, setTechStack, setWorks, setBlog }) {
         bottom-5
         left-1/2
         -translate-x-1/2
-        w-fit
+        w-[90%]
+        sm:w-fit
+        flex justify-center items-center
         bg-white/20
         backdrop-blur-md
         border
@@ -43,7 +45,7 @@ function Footer({ setContactMe, setTechStack, setWorks, setBlog }) {
               cursor-pointer
               duration-200
               hover:-translate-y-2
-              transition-all
+              transition-all shrink-0 sm:shrink
             "
           >
             <img

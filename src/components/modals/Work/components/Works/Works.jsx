@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Home from "./components/Home";
 import { FaArrowLeftLong } from "react-icons/fa6";
+const BASE = import.meta.env.BASE_URL;
 
 function Works() {
   const [activeTab, setActiveTab] = useState("home");
@@ -56,37 +57,37 @@ function Works() {
             <div className="space-y-2">
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/images/Professional_admin_dashboard/1.webp"
+                  src={`${BASE}/images/Professional_admin_dashboard/1.webp`}
                   alt=""
                 />
               </div>
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/images/Professional_admin_dashboard/2.webp"
+                  src={`${BASE}/images/Professional_admin_dashboard/2.webp`}
                   alt=""
                 />
               </div>
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/images/Professional_admin_dashboard/3.webp"
+                  src={`${BASE}/images/Professional_admin_dashboard/3.webp`}
                   alt=""
                 />
               </div>
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/images/Professional_admin_dashboard/4.webp"
+                  src={`${BASE}/images/Professional_admin_dashboard/4.webp`}
                   alt=""
                 />
               </div>
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/images/Professional_admin_dashboard/5.webp"
+                  src={`${BASE}/images/Professional_admin_dashboard/5.webp`}
                   alt=""
                 />
               </div>
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/images/Professional_admin_dashboard/6.webp"
+                  src={`${BASE}/images/Professional_admin_dashboard/6.webp`}
                   alt=""
                 />
               </div>
@@ -144,28 +145,28 @@ function Works() {
               <div className="grid grid-cols-2 gap-2">
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/Macfolio/Mega_News/localhost_5174_ (1).webp"
+                    src={`${BASE}/Mega_News/localhost_5174_ (1).webp`}
                     alt=""
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/Macfolio/Mega_News/localhost_5174_ (2).webp"
+                    src={`${BASE}/Mega_News/localhost_5174_ (2).webp`}
                     alt=""
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/Macfolio/Mega_News/localhost_5174_ (3).webp"
+                    src={`${BASE}/Mega_News/localhost_5174_ (3).webp`}
                     alt=""
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src="/Macfolio/Mega_News/localhost_5174_ (4).webp"
+                    src={`${BASE}/Mega_News/localhost_5174_ (4).webp`}
                     alt=""
                   />
                 </div>
@@ -176,7 +177,7 @@ function Works() {
                   <p className="text-center text-sm p-1">نسخه دسکتاپ</p>
 
                   <img
-                    src="/Macfolio/Mega_News/descktop.webp"
+                    src={`${BASE}/Mega_News/descktop.webp`}
                     alt="descktop"
                     loading="lazy"
                     className="rounded-lg"
@@ -187,7 +188,7 @@ function Works() {
                   <p className="text-center text-sm p-1">نسخه تبلت</p>
 
                   <img
-                    src="/Macfolio/Mega_News/tablet.webp"
+                    src={`${BASE}/Mega_News/tablet.webp`}
                     alt="tablet"
                     loading="lazy"
                     className="rounded-lg"
@@ -198,7 +199,7 @@ function Works() {
                   <p className="text-center text-sm p-1">نسخه موبایل</p>
 
                   <img
-                    src="/Macfolio/Mega_News/mobile.webp"
+                    src={`${BASE}/Mega_News/mobile.webp`}
                     alt="mobile"
                     loading="lazy"
                     className="rounded-lg"
@@ -257,38 +258,38 @@ function Works() {
               <div className="grid grid-cols-2 gap-2">
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <p className="text-sm text-center p-2">لایت مود</p>
-                  <img src="/Macfolio/images/personal_website/1.webp" alt="" />
+                  <img src={`${BASE}/images/personal_website/1.webp`} alt="" />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <p className="text-sm text-center p-2">دارک مود</p>
-                  <img src="/Macfolio/images/personal_website/2.webp" alt="" />
+                  <img src={`${BASE}/images/personal_website/2.webp`} alt="" />
                 </div>
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/personal_website/3.webp"
+                  src={`${BASE}/personal_website/3.webp`}
                   alt=""
                   loading="lazy"
                 />
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/personal_website/4.webp"
+                  src={`${BASE}/personal_website/4.webp`}
                   alt=""
                   loading="lazy"
                 />
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/personal_website/5.webp"
+                  src={`${BASE}/personal_website/5.webp`}
                   alt=""
                   loading="lazy"
                 />
               </div>
               <div className="w-full h-fit rounded-lg overflow-hidden">
                 <img
-                  src="/Macfolio/personal_website/6.webp"
+                  src={`${BASE}/personal_website/6.webp`}
                   alt=""
                   loading="lazy"
                 />
