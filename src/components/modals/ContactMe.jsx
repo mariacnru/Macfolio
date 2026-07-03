@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { BsTwitterX } from "react-icons/bs";
+import { BsGithub, BsTelegram, BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
 import { SiMinutemailer } from "react-icons/si";
@@ -18,7 +18,6 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
 
   const bringToFront = () => {
     topZ.current += 1;
-
     modalRef.current.style.zIndex = topZ.current;
   };
 
@@ -41,7 +40,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
         </div>
 
         <div className="justify-self-center">
-          <p className="text-sm font-semibold">Contact Me</p>
+          <p className="text-sm font-semibold">Contact me</p>
         </div>
 
         <div
@@ -52,58 +51,62 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
         </div>
       </header>
 
-      <div className="bg-[#1e1e1e] p-5 space-y-5 h-80 md:h-fit overflow-y-auto project">
-        <div className="w-20 h-20 bg-purple-400 rounded-full"></div>
+      <div
+        dir="rtl"
+        className="bg-[#1e1e1e] p-5 space-y-5 h-80 md:h-fit overflow-y-auto project"
+      >
+        <div className="w-20 h-20 bg-purple-400 rounded-full overflow-hidden">
+          <img
+            src="/images/profile_picture.jpg"
+            alt="profile_picture"
+            width={80}
+            height={80}
+          />
+        </div>
 
-        <h3 className="font-semibold text-2xl">Let's Connect</h3>
+        <h3 className="font-semibold text-2xl">بیایید در ارتباط باشیم</h3>
 
         <p>
-          Have an idea, a project to collaborate on, or just want to talk about
-          technology and development? I’d love to hear from you and connect.
+          ایده‌ای داری، پروژه‌ای برای همکاری هست یا فقط می‌خوای درباره تکنولوژی
+          و توسعه صحبت کنیم؟ خوشحال می‌شم ازت بشنوم و با هم در ارتباط باشیم.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-          <div className="bg-red-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
-            <SlCalender size={25} />
+          <a href="tel:+989336049409" target="_self" rel="noopener noreferrer">
+            <div className="bg-red-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
+              <SlCalender size={25} />
+              تماس تلفنی
+            </div>
+          </a>
 
-            <a
-              href="tel:+989336049409"
-              target="_self"
-              rel="noopener noreferrer"
-            >
-              Phone Call
-            </a>
-          </div>
+          <a href="mailto:mariacnru@gmail.com">
+            <div className="bg-green-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
+              <SiMinutemailer size={25} />
+              ارسال ایمیل
+            </div>
+          </a>
 
-          <div className="bg-green-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
-            <SiMinutemailer size={25} />
+          <a
+            href="https://t.me/maryam_ahmadabadi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-[#fe886c] p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
+              <BsTelegram size={25} />
+              تلگرام
+            </div>
+          </a>
 
-            <a href="mailto:mariacnru@gmail.com">Send Email</a>
-          </div>
-
-          <div className="bg-[#fe886c] p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
-            <BsTwitterX size={25} />
-
-            <a
-              href="https://x.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter / X
-            </a>
-          </div>
-
-          <div className="bg-sky-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
-            <FaLinkedin size={25} />
-
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </div>
+          <a
+            href="https://github.com/mariacnru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-purple-400 p-3 w-full h-22 rounded-lg flex flex-col justify-between font-semibold text-sm">
+              <BsGithub size={25} />
+              گیت‌هاب
+            </div>
+          </a>
         </div>
       </div>
     </div>

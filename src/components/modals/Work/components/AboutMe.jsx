@@ -2,8 +2,18 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="px-5 py-4 space-y-5 h-full overflow-y-auto project" dir="rtl">
-      <div className="w-18 h-18 rounded-full bg-purple-500"></div>
+    <div
+      className="px-5 py-4 space-y-5 h-full overflow-y-auto project"
+      dir="rtl"
+    >
+      <div className="w-18 h-18 rounded-full overflow-hidden">
+        <img
+          src="/images/profile_picture.jpg"
+          alt="profile_picture"
+          width={72}
+          height={72}
+        />
+      </div>
 
       <h2 className="font-semibold">با توسعه‌دهنده پشت این کدها آشنا شوید</h2>
 
@@ -24,9 +34,9 @@ function AboutMe() {
         </span>
 
         <span>
-          خارج از دنیای برنامه‌نویسی، احتمالاً من را در حال تغییر دادن طراحی
-          صفحات تا ساعت ۲ شب، نوشیدن قهوه، یا خرید گجت‌هایی می‌بینید که خودم را
-          قانع کرده‌ام به آن‌ها نیاز دارم 😅
+          خارج از دنیای برنامه‌نویسی، احتمالاً من رو در حال تغییر دادن طراحی
+       صفحات تا ساعت ۲ شب، نوشیدن قهوه، یا خرید گجت‌هایی می‌بینید که خودم رو
+          قانع کرده‌ام به اون ها نیاز دارم 😅
         </span>
       </p>
     </div>

@@ -16,7 +16,7 @@ function App() {
 
   return (
     <main>
-      <Navbar />
+      <Navbar setContactMe={setContactMe} setWorks={setWorks} />
 
       <Welcome />
 

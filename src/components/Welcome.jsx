@@ -1,11 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+import React, { useEffect, useState } from "react";
 
 function Welcome() {
-  const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
-
   const [showText, setShowText] = useState(true);
 
   useEffect(() => {
@@ -22,26 +17,19 @@ function Welcome() {
       className="h-screen flex flex-col justify-center items-center text-white relative"
     >
       <p
-        className={`absolute top-1/12 text-sm bg-white/20 p-2 border-x-4 border-white backdrop-blur-sm transition-all duration-700 ${
+        className={`absolute top-1/12 text-sm bg-white/20 p-2 border-x-4 border-white backdrop-blur-sm transition-opacity duration-700 ${
           showText ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         It is recommended to view this portfolio on a laptop or tablet 💙🙏🏻
       </p>
+      <p className="text-sm sm:text-base">Hey, I'm Maryam! Welcom to my</p>
 
-      <p ref={subtitleRef} className="text-sm sm:text-base">
-        Hey, I'm Maryam! Welcom to my
-      </p>
-      <h1 ref={titleRef} className="mt-7 text-7xl sm:text-9xl italic">
-        <span>p</span>
-        <span>o</span>
-        <span>r</span>
-        <span>t</span>
-        <span>f</span>
-        <span>o</span>
-        <span>l</span>
-        <span>i</span>
-        <span>o</span>
+      <h1 className="mt-7 relative">
+        <span className="text-7xl sm:text-9xl italic block">portfolio</span>
+        <span className="absolute top-5 -left-12 -rotate-12 bg-white/20 backdrop-blur-[3px] border border-white/50 p-2 rounded-lg text-[12px]">
+          detail-oriented front-end developer
+        </span>
       </h1>
     </section>
   );

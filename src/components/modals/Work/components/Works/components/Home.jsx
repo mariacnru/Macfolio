@@ -19,19 +19,13 @@ function Home({ setActiveTab }) {
           Project 2 <br /> (News Magazine Landing Page)
         </span>
       </li>
-      <li
-        onClick={() => setActiveTab("cms2")}
-        className="absolute top-30 right-5 hover:scale-95 transition-transform cursor-pointer"
-      >
-        <img src="/images/folder.webp" alt="folder-icon" />
-        <span>Project 3 (CMS)</span>
-      </li>
+
       <li
         onClick={() => setActiveTab("personal_website")}
         className="absolute top-20 right-1/3 hover:scale-95 transition-transform cursor-pointer"
       >
         <img src="/images/folder.webp" alt="folder-icon" />
-        <span>Project 4 (Personal Website)</span>
+        <span>Project 3 (Personal Website)</span>
       </li>
     </ul>
   );

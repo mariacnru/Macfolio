@@ -19,74 +19,76 @@ function Works() {
               <FaArrowLeftLong />
             </div>
 
-            <h3 className="font-semibold text-white">Project Name: CMS</h3>
-            <p className="text-sm">
-              A modern content management system with authentication, dashboard
-              analytics, and content management features.
-            </p>
-            <p className="text-sm">
-              Technologies: JavaScript, React.js, TailwindCss, React-Router, SPA
-            </p>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/1.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/2.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/3.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/4.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/1.jpg" alt="" />
-              </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        )}
-
-        {activeTab === "cms2" && (
-          <div className="p-5 space-y-5 h-100 overflow-y-scroll project">
-            <div
-              onClick={() => setActiveTab("home")}
-              className="w-fit cursor-pointer"
-            >
-              <FaArrowLeftLong />
-            </div>
-
             <h3 className="font-semibold text-white">
-              Project Name: CMS Admin Panel
+              نام پروژه : پنل مدیریتی ادمین
             </h3>
             <p className="text-sm">
-              An advanced admin dashboard for managing users, posts, categories,
-              and website settings with responsive design.
+              پنل مدیریت مدرن توسعه داده شده با react.js مناسب مدیریت محصولات,
+              کاربران و سفارشات
             </p>
             <p className="text-sm">
-              Technologies: JavaScript, React.js, TailwindCss, React-Router, SPA
+              تکنولوژی ها: JavaScript, React.js, TailwindCss, React-Router, SPA
             </p>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/1.jpg" alt="" />
+            <p className="text-sm">
+              لینک گیتهاب پروژه:
+              <a
+                href="https://github.com/mariacnru/professioal-admin-dashboard.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline"
+              >
+                مشاهده پروژه در گیتهاب
+              </a>
+            </p>
+
+            <p className="text-sm">
+              مشاهده آنلاین پروژه :
+              <a
+                href="https://mariacnru.github.io/professioal-admin-dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline"
+              >
+                دمو آنلاین
+              </a>
+            </p>
+
+            <div className="space-y-2">
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/public/images/Professional_admin_dashboard/1.webp"
+                  alt=""
+                />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/2.jpg" alt="" />
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/public/images/Professional_admin_dashboard/2.webp"
+                  alt=""
+                />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/3.jpg" alt="" />
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/public/images/Professional_admin_dashboard/3.webp"
+                  alt=""
+                />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/4.jpg" alt="" />
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/public/images/Professional_admin_dashboard/4.webp"
+                  alt=""
+                />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/1.jpg" alt="" />
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/public/images/Professional_admin_dashboard/5.webp"
+                  alt=""
+                />
               </div>
-              <div className="w-full h-29 rounded-lg overflow-hidden">
-                <img src="/projects_images/2.jpg" alt="" />
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/public/images/Professional_admin_dashboard/6.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -123,6 +125,18 @@ function Works() {
                 className="text-blue-400 underline"
               >
                 مشاهده پروژه در گیتهاب
+              </a>
+            </p>
+
+            <p className="text-sm">
+              مشاهده آنلاین پروژه :
+              <a
+                href="https://mariacnru.github.io/news-magazine-landing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline"
+              >
+                دمو آنلاین
               </a>
             </p>
 
@@ -225,6 +239,18 @@ function Works() {
                 className="text-blue-400 underline"
               >
                 مشاهده پروژه در گیتهاب
+              </a>
+            </p>
+
+            <p className="text-sm">
+              مشاهده آنلاین پروژه :
+              <a
+                href="https://mariacnru.github.io/frontEnd-developer-portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 underline"
+              >
+                دمو آنلاین
               </a>
             </p>
             <div className="flex flex-col gap-5">

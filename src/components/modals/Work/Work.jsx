@@ -29,9 +29,9 @@ function Work({ works, setWorks, topZ }) {
       style={{ zIndex }}
       className={`${
         works ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-0"
-      } block md:flex transition-all text-gray-300 w-dvw md:w-2xl absolute md:top-1/5 top-15 md:left-5 mx-5 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
+      } block md:flex transition-all text-gray-300 md:w-2xl absolute top-1/7 right-0 left-0 mx-5 md:mx-20 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
     >
-      <nav className="md:hidden flex justify-between items-center bg-[#323137]">
+      <nav className="md:hidden flex justify-between items-center bg-[#323137] py-2">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
           <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
@@ -40,13 +40,13 @@ function Work({ works, setWorks, topZ }) {
 
         <ul className="text-sm *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:rounded-lg *:transition-colors cursor-pointer">
           <li onClick={() => setActiveTab("about")}>
-            <img src="/icons/info.svg" alt="" /> About me
+            <img src="/icons/info.svg" alt="" /> درباره من
           </li>
           <li onClick={() => setActiveTab("work")}>
-            <img src="/icons/work.svg" alt="" /> Work
+            <img src="/icons/work.svg" alt="" /> نمونه کار ها
           </li>
           <li onClick={() => setActiveTab("resume")}>
-            <img src="/icons/file.svg" alt="" /> Resume
+            <img src="/icons/file.svg" alt="" /> رزومه
           </li>
         </ul>
 
@@ -70,13 +70,13 @@ function Work({ works, setWorks, topZ }) {
             Favorites
           </li>
           <li onClick={() => setActiveTab("about")}>
-            <img src="/icons/info.svg" alt="" /> About me
+            <img src="/icons/info.svg" alt="" /> درباره من
           </li>
           <li onClick={() => setActiveTab("work")}>
-            <img src="/icons/work.svg" alt="" /> Work
+            <img src="/icons/work.svg" alt="" /> نمونه کار ها
           </li>
           <li onClick={() => setActiveTab("resume")}>
-            <img src="/icons/file.svg" alt="" /> Resume
+            <img src="/icons/file.svg" alt="" /> رزومه
           </li>
         </ul>
 

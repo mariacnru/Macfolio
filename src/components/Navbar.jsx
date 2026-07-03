@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import dayjs from "dayjs";
-import { navLinks, navIcons } from "../constants";
+import { navIcons } from "../constants";
 
-function Navbar() {
+function Navbar({ setContactMe, setWorks }) {
   const currentTime = useMemo(() => dayjs().format("ddd MMM D h:mm A"), []);
 
   return (
@@ -13,9 +13,8 @@ function Navbar() {
         <p className="font-bold text-sm">Maryam's Portfolio</p>
 
         <ul className="hidden md:flex items-center gap-5">
-          {navLinks.map(({ id, name }) => (
-            <li key={id}>{name}</li>
-          ))}
+          <li onClick={() => setWorks(true)}>Portfolio</li>
+          <li onClick={() => setContactMe(true)}>Contact</li>
         </ul>
       </div>
 
