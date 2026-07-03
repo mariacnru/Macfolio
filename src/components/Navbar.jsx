@@ -28,7 +28,7 @@ function Navbar({ setContactMe, setWorks }) {
           {navIcons.map(({ id, img }) => (
             <li key={id}>
               <img
-                src={img}
+                src={`/Macfolio${img}`}
                 alt={`icon-${id}`}
                 width={15}
                 height={15}
