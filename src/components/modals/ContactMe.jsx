@@ -57,7 +57,7 @@ function ContactMe({ contactMe, setContactMe, topZ }) {
       >
         <div className="w-20 h-20 bg-purple-400 rounded-full overflow-hidden">
           <img
-            src="/images/profile_picture.jpg"
+            src="/Macfolio/images/profile_picture.jpg"
             alt="profile_picture"
             width={80}
             height={80}
