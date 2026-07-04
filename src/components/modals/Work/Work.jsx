@@ -32,13 +32,13 @@ function Work({ works, setWorks, topZ }) {
       } block md:flex transition-all text-gray-300 md:w-2xl absolute top-1/7 right-0 left-0 mx-5 md:mx-20 bg-white rounded-xl overflow-hidden border border-stone-700 shadow-xl`}
     >
       <nav className="md:hidden flex justify-between items-center bg-[#323137] py-2">
-        <div className="flex items-center gap-2">
+        <div className="hidden sm:flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
           <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
           <div className="w-3 h-3 rounded-full bg-[#28c840]"></div>
         </div>
 
-        <ul className="text-sm *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:rounded-lg *:transition-colors cursor-pointer">
+        <ul className="text-sm *:flex *:items-center *:gap-2 *:hover:not-first:bg-gray-600 *:rounded-lg *:transition-colors cursor-pointer *:whitespace-nowrap">
           <li onClick={() => setActiveTab("about")}>
             <img src="/Macfolio/icons/info.svg" alt="" /> درباره من
           </li>
