@@ -1,11 +1,11 @@
 const BASE = import.meta.env.BASE_URL;
 
 const navIcons = [
-  { id: 1, img: `${BASE}/icons/wifi.svg` },
-  { id: 2, img: `${BASE}/icons/search.svg` },
-  { id: 3, img: `${BASE}/icons/user.svg` },
-  { id: 4, img: `${BASE}/icons/mode.svg` },
-  { id: 5, img: `${BASE}/icons/user.svg` },
+  { id: 1, img: "/Macfolio/icons/wifi.svg" },
+  { id: 2, img: "/Macfolio/icons/search.svg" },
+  { id: 3, img: "/Macfolio/icons/user.svg" },
+  { id: 4, img: "/Macfolio/icons/mode.svg" },
+  { id: 5, img: "/Macfolio/icons/user.svg" },
 ];
 
 const footerIcons = [
