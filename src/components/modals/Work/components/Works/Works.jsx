@@ -145,29 +145,29 @@ function Works() {
               <div className="grid grid-cols-2 gap-2">
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src={`/Macfolio/Mega_News/localhost_5174_ (1).webp`}
-                    alt=""
+                    src={`/Macfolio/Mega_News/localhost_5174_(1).webp`}
+                    alt="Mega_news_demo"
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src={`/Macfolio/Mega_News/localhost_5174_ (2).webp`}
-                    alt=""
+                    src={`/Macfolio/Mega_News/localhost_5174_(2).webp`}
+                    alt="Mega_news_demo"
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src={`/Macfolio/Mega_News/localhost_5174_ (3).webp`}
-                    alt=""
+                    src={`/Macfolio/Mega_News/localhost_5174_(3).webp`}
+                    alt="Mega_news_demo"
                   />
                 </div>
 
                 <div className="w-full h-fit rounded-lg overflow-hidden">
                   <img
-                    src={`/Macfolio/Mega_News/localhost_5174_ (4).webp`}
-                    alt=""
+                    src={`/Macfolio/Mega_News/localhost_5174_(4).webp`}
+                    alt="Mega_news_demo"
                   />
                 </div>
               </div>
