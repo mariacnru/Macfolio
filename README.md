@@ -1,18 +1,77 @@
-# React + Vite
+# 🍎 Macfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern macOS-inspired portfolio website built with **React** and **Tailwind CSS**. This project recreates the macOS user experience while showcasing personal projects, skills, and contact information in an interactive and responsive interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://mariacnru.github.io/Macfolio/
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ✨ Features
 
-Note: This will impact Vite dev & build performances.
+- 🍎 macOS-inspired user interface
+- 📱 Fully Responsive Design
+- ⚡ Fast performance with Vite
+- 🎨 Modern UI using Tailwind CSS
+- 🧩 Reusable React Components
+- 🖥️ Interactive desktop experience
+- 📂 Projects showcase
+- 📞 Contact section
+- 🌙 Clean and minimal design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- Vite
+- Git & GitHub
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/mariacnru/Macfolio.git
+```
+
+Go to the project directory
+
+```bash
+cd Macfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+---
+
+## 👩‍💻 Author
+
+**Maryam Ahmadabadi**
+
+GitHub:
+https://github.com/mariacnru
+
+Portfolio:
+https://mariacnru.github.io/Macfolio/
+
